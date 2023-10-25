@@ -20,5 +20,5 @@ inner join lfa1 on lfa1.lifnr = ekko.lifnr
     ekpo.meins,
     lfa1.lifnr,
     lfa1.name1,
-    concat( lfa1.stras, lfa1.mcod3 ) as satici_adresi
+    concat_with_space( lfa1.stras, lfa1.mcod3, 1 ) as satici_adresi
 }
